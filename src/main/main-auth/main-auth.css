@@ -1,0 +1,158 @@
+.main-auth {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  animation: fade-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  flex-direction: column;
+}
+
+.main-auth img.logo {
+  margin-top: 80px;
+  height: 100px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.main-auth .auth-form {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.auth-form p.title {
+  color: #0c6f9c;
+  animation-delay: 0.3s;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  align-self: center;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.field {
+  width: 380px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35),
+    12px 0 20px -12px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  align-self: center;
+  padding: 5px;
+  border: solid 1px rgb(236, 236, 236);
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+p.field-name {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #979797;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.field-input {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.field-input img.unselectable {
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  object-fit: contain;
+  margin-left: 5px;
+  padding-right: 5px;
+}
+.field-input p {
+  width: min-content;
+  margin: 0;
+  align-self: center;
+  background-color: #7c7c7c;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.field-input input {
+  flex: 1;
+  border: #fff solid 1px;
+  border-bottom: solid 1px rgb(172, 172, 172);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.field-input input:focus {
+  border: #0c6f9c 1px solid;
+}
+.link {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #5dbcd2;
+  border: #5dbcd2 1px solid;
+  font-size: 14px;
+  flex: 1;
+  text-decoration: none;
+  margin: 2px;
+}
+
+.link:hover {
+  background-color: #fff;
+  color: #5dd276;
+}
+
+.link:active {
+  transform: scale(0.95);
+  animation: fade-in ease-in-out 0.3s;
+}
+
+.auth-form .button {
+  align-self: center;
+}
+.button {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35),
+    12px 0 20px -12px rgba(0, 0, 0, 0.35);
+  border: #5dbcd2 1px solid;
+  width: 250px;
+  margin-bottom: 20px;
+  max-height: 50px;
+}
+.button img.unselectable {
+  width: 30px;
+  object-fit: contain;
+  align-self: center;
+}
+.button p.text {
+  margin: 0;
+  align-self: center;
+  margin-left: 5px;
+  color: #5dbcd2;
+  font-weight: 800;
+  text-transform: capitalize;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60px;
+}
+.button:active {
+  background-color: #5dbcd2;
+  transform: scale(0.95);
+  animation: fade-in ease-in-out 0.3s;
+}
+
+.button:active p.text {
+  color: #fff;
+}
